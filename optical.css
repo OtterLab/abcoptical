@@ -353,6 +353,10 @@ input[type=submit]:hover { /* pseudo class */
        padding: 10px;
    }
 
+   .menu-links ul li a:active { /* pseudo class */
+    background-color:  #3498DB; /* skyblue */
+   }
+
    .menu-links.active {
        display: flex;
    }
@@ -360,7 +364,7 @@ input[type=submit]:hover { /* pseudo class */
         height: 150px;
     }
     .info-2 {
-        height: 280px;
+        height: 286px;
     }
     .flex-image {
         display: flex; /* flex */
