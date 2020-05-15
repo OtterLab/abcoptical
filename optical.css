@@ -1,0 +1,469 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-image: url(images/eyewear_collection.png);
+    background-repeat: no-repeat;
+    line-height: 20vh;
+    filter: grayscale(50%);
+}
+
+/* navigation bar */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 12px;
+}
+
+.logo img {
+    width: 300px;
+    padding-top: 25px;
+    padding-left: 18px;
+}
+
+.menu-links ul {
+   margin: 0;
+   padding: 0;
+   display: flex; 
+   list-style: none;
+}
+
+.menu-links li {
+    padding: 10px 20px;
+}
+
+.menu-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    font-family: 'Muli', sans-serif;
+    font-size: 12pt;
+}
+
+.menu-links ul li a:active { /* pseudo class */
+    background-color:  #3498DB; /* skyblue */
+}
+
+.menu-links ul li.active a {
+    color: #3498DB; /* skyblue */
+}
+
+.menu-links ul li a:hover {
+    color: #3498DB; /* skyblue */
+    transition: .5s;
+}
+
+/* flexbox */
+.brand-title {
+    height: 60px;
+}
+
+.brand-title h3 {
+    font-family: 'Muli', sans-serif;
+    font-size: 18pt;
+    padding-top: 2em;
+}
+
+.flexbox {
+    background-color: whitesmoke;
+    padding-top: 15px;
+    margin-top: 2.3em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexbox > div {
+    width: 350px;
+    margin: 6px;
+}
+
+.flexbox > div img {
+    width: 160px;
+    height: 150px;
+    padding-left: 3em;
+    padding-top: 1.5em;
+}
+
+/* services */
+.service-bg {
+    background-color: whitesmoke;
+}
+
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    margin: 3em;
+}
+
+th, td {
+    padding: 5px;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    font-size: 12pt;
+    font-family: 'Muli', sans-serif;
+    font-size: 11pt;
+}
+
+  th {
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+  }
+
+/* content */
+.info {
+      height: 140px;
+}
+
+.info-2 {
+    height: 200px;
+}
+
+/* images */
+.flex-image {
+    display: flex; /* flex */
+    flex-direction: row; /* horizontal direction */
+    background-color: whitesmoke;
+    padding-top: 1.5em;
+    height: 250px;
+    padding-left: 12em;
+    margin-top: 3em;
+}
+
+.flex-image > div {
+    margin: 10px;
+    width: 200px;
+    height: 180px;
+}
+
+.flex-image > div img {
+    width: 200px;
+    height: 180px;
+}
+
+/* bio */
+.bio-flex {
+    display: flex;
+    flex-direction: row;
+    height: 420px;
+    background-color: whitesmoke;
+}
+
+.bio-flex > div {
+    width: 800px;
+    margin: 10px;
+}
+
+.bio-img > img {
+    width: 200px;
+    height: 180px;
+    margin: 10px;
+    padding-top: 3.6em;
+}
+
+/* styling headings and paragraphs */
+h1 {
+    font-family: 'Muli', sans-serif;
+    font-size: 20pt;
+    padding-left: 1em;
+    padding-top: 2em;
+}
+
+h2 {
+    font-family: 'Muli', sans-serif;
+    font-size: 20pt;
+    padding-left: 1em;
+    padding-top: 2em;
+}
+
+h3 {
+    font-family: 'Muli', sans-serif;
+    font-size: 16pt;
+    padding-left: 1em;
+    padding-top: 2em;
+    padding-bottom: 1.5em;
+}
+
+p {
+    font-family: 'Muli', sans-serif;
+    font-size: 11pt;
+    margin-left: 2.5em;
+    margin-right: 3em;
+    padding: 16px;
+}
+
+figcaption {
+    font-family: 'Muli', sans-serif;
+    font-size: 10pt;
+    text-align: center;
+}
+
+/* footer */
+footer {
+    height: 160px;
+    margin-top: 2em;
+}
+
+span {
+    display: block;
+    font-family: 'Muli', sans-serif;
+    font-size: 10pt;
+    text-align: center;
+    padding-top: .8em;
+}
+
+footer p {
+    font-family: 'Muli', sans-serif;
+    font-size: 10pt;
+    padding-top: 3em;
+    text-align: center;
+}
+
+/* contact form */
+.bookform {
+    background-color: whitesmoke;
+    height: 480px;
+}
+
+label {
+    font-family: 'Muli', sans-serif;
+    font-size: 12pt;
+    display: block;
+    padding-top: 1em;
+    padding-bottom: .6em;
+    padding-left: 4em;
+}
+
+input[type=text], input[type=email] {
+    padding: 8px 15px;
+    margin-left: 7em;
+    width: 300px;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+input[type=text]:focus, input[type=email]:focus { /* pseudo class */
+    background-color: lightblue;
+}
+
+input[type=submit] {
+    padding: 10px 10px;
+    width: 100px;
+    background-color: black;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+    font-size: 11pt;
+    cursor: pointer;
+    margin-left: 30em;
+    margin-top: 2em;
+}
+
+input[type=submit]:hover { /* pseudo class */
+    background-color: #3498DB; /* skyblue */
+    color: white;
+}
+
+.toggle-btn {
+    top: .3em;
+    right: 1.1em;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 4.5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 3px;
+}
+
+/* hamburger menu  transitions */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+  
+.change .bar2 {
+    opacity: 0;
+}
+  
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* mobile view */
+@media (max-width:470px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    .logo img {
+        width: 150px;
+    }
+    header {
+        background-size: 100vw;
+        line-height: 5vh;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        padding: 20px;
+    }
+
+    .toggle-btn {
+        position: absolute; /* mobile view only */
+        display: block;
+        padding-top: 6.6em;
+        padding-right: 12px;
+    }
+
+   .menu-links {
+      display: none;
+      width: 100%;
+   }
+
+   nav {
+       flex-direction: column;
+       align-items: flex-start;
+   }
+
+   .menu-links ul {
+       flex-direction: column;
+       width: 100%;
+   }
+
+   .menu-links li {
+       text-align: center;
+       padding: 15px;
+       border-bottom: 1px solid white;
+   }
+
+   .menu-links li a {
+       padding: 10px;
+   }
+
+   .menu-links.active {
+       display: flex;
+   }
+   .info {
+        height: 150px;
+    }
+    .info-2 {
+        height: 280px;
+    }
+    .flex-image {
+        display: flex; /* flex */
+        flex-direction: column; /* vertical direction */
+        height: 650px;
+        padding-left: 7em;
+    }
+    .flex-image > div img {
+        width: 160px;
+        height: 150px;
+    }
+    figcaption {
+        text-align: left;
+    }
+    .bio-flex {
+        display: flex;
+        flex-direction: column;
+        height: 860px;
+    }
+    .bio-flex p {
+        width: 40%;
+    }
+    .bio-flex > div {
+        width: 800px;
+        margin: 10px;
+    }
+    .bio-img > img {
+        width: 200px;
+        height: 180px;
+        margin: 10px;
+        padding-top: 1em;
+        padding-left: 1.3em;
+    }
+    span {
+        font-size: 10pt;
+        padding: 1.8em;
+    }
+    .bio-img figcaption {
+        padding-left: 2.2em;
+    }
+    td {
+        display: inline-block;
+    }
+    th {
+        display: block;
+    }
+    th, td {
+        text-align: left;
+        font-size: 11pt;
+    }
+    table, th, td {
+        margin: 0;
+    }
+    .service-heading {
+        margin-bottom: 1.6em;
+    }
+    label {
+        display: none;
+    }
+    input[type=text], input[type=email] {
+        margin-top: 3em;
+        margin-left: 2em;
+        width: 300px;
+    }
+    input[type=submit] {
+        margin-left: 2em;
+        width: 332px;
+    }
+    footer {
+        height: 160px;
+        margin-top: 1.8em;
+    }
+    
+    span {
+        display: block;
+        font-family: 'Muli', sans-serif;
+        font-size: 10pt;
+        text-align: center;
+        padding-top: .8em;
+    }
+    
+    footer p {
+        font-family: 'Muli', sans-serif;
+        font-size: 10pt;
+        padding-top: 2em;
+        text-align: center;
+    }
+    h1 {
+        font-family: 'Muli', sans-serif;
+        font-size: 16pt;
+    }
+    
+    h2 {
+        font-family: 'Muli', sans-serif;
+        font-size: 16pt;  
+    }
+    
+    h3 {
+        font-family: 'Muli', sans-serif;
+        font-size: 16pt;
+    }
+    p {
+        font-size: 11pt;
+        margin-left: .3em;
+    }
+}
